@@ -80,7 +80,7 @@ namespace MatchGame
 
         private void TextBlock_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            TextBlock textBlock = sender as TextBlock;
+            TextBlock? textBlock = e.Source as TextBlock;
             if (_findingMatch == false)
             {
                 textBlock.Visibility = Visibility.Hidden;
